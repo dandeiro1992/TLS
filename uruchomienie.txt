@@ -1,0 +1,1 @@
+docker run --rm -itd --name httpd_server_2 -p 443:443 -v /home/damian/Pulpit/tls/websites:/usr/local/apache2/htdocs/ my_apache2
