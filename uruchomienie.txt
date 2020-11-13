@@ -1,1 +1,7 @@
 docker run --rm -itd --name httpd_server_2 -p 443:443 -v /home/damian/Pulpit/tls/websites:/usr/local/apache2/htdocs/ my_apache2
+
+kopiowanie do docker:
+docker cp bundle.crt 503104810c222c5baa8a68e523f1bb6567e82aa687f93950e5f91a4c2632648c:/usr/local/apache2/conf/bundle.crt
+
+tworzenie ścieżki certyfikatów:
+cat domain.crt domain-ca.crt > bundle.crt
